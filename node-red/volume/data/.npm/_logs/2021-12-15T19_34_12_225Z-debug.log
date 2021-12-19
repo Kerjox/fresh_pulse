@@ -1,0 +1,709 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--no-audit',
+1 verbose cli   '--no-update-notifier',
+1 verbose cli   '--no-fund',
+1 verbose cli   '--save',
+1 verbose cli   '--save-prefix=~',
+1 verbose cli   '--production',
+1 verbose cli   '--engine-strict',
+1 verbose cli   'node-red-contrib-rpiplc-node@1.0.6'
+1 verbose cli ]
+2 info using npm@6.14.15
+3 info using node@v14.18.2
+4 verbose npm-session c241cd4de2aaa20b
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-rpiplc-node 5193ms
+8 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-rpiplc-node/-/node-red-contrib-rpiplc-node-1.0.6.tgz 901ms
+9 silly pacote version manifest for node-red-contrib-rpiplc-node@1.0.6 fetched in 6130ms
+10 timing stage:loadCurrentTree Completed in 7293ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 7ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 624ms
+16 silly install loadAllDepsIntoIdealTree
+17 silly resolveWithNewModule node-red-contrib-rpiplc-node@1.0.6 checking installable status
+18 http fetch GET 200 https://registry.npmjs.org/@industrialshields%2frpiplc 1240ms
+19 http fetch GET 200 https://registry.npmjs.org/@industrialshields/rpiplc/-/rpiplc-1.0.1.tgz 1638ms
+20 silly pacote range manifest for @industrialshields/rpiplc@^1.0.1 fetched in 2901ms
+21 silly resolveWithNewModule @industrialshields/rpiplc@1.0.1 checking installable status
+22 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 3529ms
+23 timing stage:loadIdealTree Completed in 4340ms
+24 silly currentTree node-red-project@0.0.1
+24 silly currentTree +-- @influxdata/influxdb-client@1.21.0
+24 silly currentTree +-- @serialport/binding-abstract@9.2.3
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- @serialport/binding-mock@9.2.4
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- @serialport/bindings@9.2.8
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- @serialport/parser-byte-length@9.2.4
+24 silly currentTree +-- @serialport/parser-cctalk@9.2.4
+24 silly currentTree +-- @serialport/parser-delimiter@9.2.4
+24 silly currentTree +-- @serialport/parser-inter-byte-timeout@9.2.4
+24 silly currentTree +-- @serialport/parser-readline@9.2.4
+24 silly currentTree +-- @serialport/parser-ready@9.2.4
+24 silly currentTree +-- @serialport/parser-regex@9.2.4
+24 silly currentTree +-- @serialport/stream@9.2.4
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- @types/component-emitter@1.2.11
+24 silly currentTree +-- @types/cookie@0.4.1
+24 silly currentTree +-- @types/cors@2.8.12
+24 silly currentTree +-- @types/node@16.11.13
+24 silly currentTree +-- accepts@1.3.7
+24 silly currentTree +-- ansi-regex@2.1.1
+24 silly currentTree +-- aproba@1.2.0
+24 silly currentTree +-- are-we-there-yet@1.1.7
+24 silly currentTree +-- base64-arraybuffer@1.0.1
+24 silly currentTree +-- base64-js@1.5.1
+24 silly currentTree +-- base64id@2.0.0
+24 silly currentTree +-- bindings@1.5.0
+24 silly currentTree +-- bl@4.1.0
+24 silly currentTree | `-- readable-stream@3.6.0
+24 silly currentTree +-- buffer@5.7.1
+24 silly currentTree +-- bytes@3.0.0
+24 silly currentTree +-- chownr@1.1.4
+24 silly currentTree +-- code-point-at@1.1.0
+24 silly currentTree +-- component-emitter@1.3.0
+24 silly currentTree +-- compressible@2.0.18
+24 silly currentTree +-- compression@1.7.4
+24 silly currentTree +-- console-control-strings@1.1.0
+24 silly currentTree +-- cookie@0.4.1
+24 silly currentTree +-- core-util-is@1.0.3
+24 silly currentTree +-- cors@2.8.5
+24 silly currentTree +-- debug@2.6.9
+24 silly currentTree +-- decompress-response@6.0.0
+24 silly currentTree +-- deep-extend@0.6.0
+24 silly currentTree +-- delegates@1.0.0
+24 silly currentTree +-- depd@1.1.2
+24 silly currentTree +-- destroy@1.0.4
+24 silly currentTree +-- detect-libc@1.0.3
+24 silly currentTree +-- ee-first@1.1.1
+24 silly currentTree +-- encodeurl@1.0.2
+24 silly currentTree +-- end-of-stream@1.4.4
+24 silly currentTree +-- engine.io-parser@5.0.2
+24 silly currentTree +-- engine.io@6.0.1
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- escape-html@1.0.3
+24 silly currentTree +-- etag@1.8.1
+24 silly currentTree +-- expand-template@2.0.3
+24 silly currentTree +-- file-uri-to-path@1.0.0
+24 silly currentTree +-- fresh@0.5.2
+24 silly currentTree +-- fs-constants@1.0.0
+24 silly currentTree +-- gauge@2.7.4
+24 silly currentTree +-- github-from-package@0.0.0
+24 silly currentTree +-- gridstack@0.6.4
+24 silly currentTree +-- has-unicode@2.0.1
+24 silly currentTree +-- http-errors@1.7.3
+24 silly currentTree +-- ieee754@1.2.1
+24 silly currentTree +-- influx@5.6.3
+24 silly currentTree +-- inherits@2.0.4
+24 silly currentTree +-- ini@1.3.8
+24 silly currentTree +-- is-fullwidth-code-point@1.0.0
+24 silly currentTree +-- isarray@1.0.0
+24 silly currentTree +-- jquery@3.6.0
+24 silly currentTree +-- lodash@4.17.21
+24 silly currentTree +-- lru-cache@6.0.0
+24 silly currentTree +-- mime-db@1.51.0
+24 silly currentTree +-- mime-types@2.1.34
+24 silly currentTree +-- mime@1.6.0
+24 silly currentTree +-- mimic-response@3.1.0
+24 silly currentTree +-- minimist@1.2.5
+24 silly currentTree +-- mkdirp-classic@0.5.3
+24 silly currentTree +-- ms@2.0.0
+24 silly currentTree +-- nan@2.15.0
+24 silly currentTree +-- napi-build-utils@1.0.2
+24 silly currentTree +-- negotiator@0.6.2
+24 silly currentTree +-- node-abi@3.5.0
+24 silly currentTree +-- node-red-contrib-bigtimer@2.7.6
+24 silly currentTree +-- node-red-contrib-counter@0.1.6
+24 silly currentTree +-- node-red-contrib-influxdb@0.6.1
+24 silly currentTree +-- node-red-dashboard@3.1.2
+24 silly currentTree +-- node-red-node-email@1.12.3
+24 silly currentTree | +-- base32.js@0.1.0
+24 silly currentTree | +-- core-util-is@1.0.2
+24 silly currentTree | +-- deepmerge@4.2.2
+24 silly currentTree | +-- dom-serializer@1.3.1
+24 silly currentTree | +-- domelementtype@2.2.0
+24 silly currentTree | +-- domhandler@4.1.0
+24 silly currentTree | +-- domutils@2.5.2
+24 silly currentTree | +-- encoding-japanese@1.0.30
+24 silly currentTree | +-- entities@2.2.0
+24 silly currentTree | +-- he@1.2.0
+24 silly currentTree | +-- html-to-text@7.0.0
+24 silly currentTree | +-- htmlparser2@6.1.0
+24 silly currentTree | +-- iconv-lite@0.6.2
+24 silly currentTree | +-- imap@0.8.19
+24 silly currentTree | +-- inherits@2.0.4
+24 silly currentTree | +-- ipv6-normalize@1.0.1
+24 silly currentTree | +-- isarray@0.0.1
+24 silly currentTree | +-- libbase64@1.2.1
+24 silly currentTree | +-- libmime@5.0.0
+24 silly currentTree | +-- libqp@1.1.0
+24 silly currentTree | +-- linkify-it@3.0.2
+24 silly currentTree | +-- mailparser@3.2.0
+24 silly currentTree | | `-- nodemailer@6.5.0
+24 silly currentTree | +-- mailsplit@5.0.1
+24 silly currentTree | +-- minimist@1.2.5
+24 silly currentTree | +-- nodemailer@6.6.3
+24 silly currentTree | +-- optimist@0.6.1
+24 silly currentTree | | `-- minimist@0.0.10
+24 silly currentTree | +-- poplib@0.1.7
+24 silly currentTree | +-- readable-stream@1.1.14
+24 silly currentTree | +-- safer-buffer@2.1.2
+24 silly currentTree | +-- semver@5.3.0
+24 silly currentTree | +-- smtp-server@3.9.0
+24 silly currentTree | | `-- nodemailer@6.6.1
+24 silly currentTree | +-- string_decoder@0.10.31
+24 silly currentTree | +-- tlds@1.219.0
+24 silly currentTree | +-- uc.micro@1.0.6
+24 silly currentTree | +-- utf7@1.0.2
+24 silly currentTree | `-- wordwrap@0.0.3
+24 silly currentTree +-- node-red-node-pi-gpio@2.0.1
+24 silly currentTree +-- node-red-node-random@0.4.0
+24 silly currentTree +-- node-red-node-serialport@0.15.0
+24 silly currentTree +-- node-red-node-smooth@0.1.2
+24 silly currentTree +-- npmlog@4.1.2
+24 silly currentTree +-- number-is-nan@1.0.1
+24 silly currentTree +-- object-assign@4.1.1
+24 silly currentTree +-- on-finished@2.3.0
+24 silly currentTree +-- on-headers@1.0.2
+24 silly currentTree +-- once@1.4.0
+24 silly currentTree +-- parseurl@1.3.3
+24 silly currentTree +-- prebuild-install@7.0.0
+24 silly currentTree +-- process-nextick-args@2.0.1
+24 silly currentTree +-- pump@3.0.0
+24 silly currentTree +-- range-parser@1.2.1
+24 silly currentTree +-- rc@1.2.8
+24 silly currentTree +-- readable-stream@2.3.7
+24 silly currentTree +-- safe-buffer@5.1.2
+24 silly currentTree +-- semver@7.3.5
+24 silly currentTree +-- send@0.17.1
+24 silly currentTree | `-- ms@2.1.1
+24 silly currentTree +-- serialport@9.2.8
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- serve-static@1.14.1
+24 silly currentTree +-- set-blocking@2.0.0
+24 silly currentTree +-- setprototypeof@1.1.1
+24 silly currentTree +-- signal-exit@3.0.6
+24 silly currentTree +-- simple-concat@1.0.1
+24 silly currentTree +-- simple-get@4.0.0
+24 silly currentTree +-- socket.io-adapter@2.3.3
+24 silly currentTree +-- socket.io-parser@4.0.4
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- socket.io@4.3.2
+24 silly currentTree | +-- debug@4.3.3
+24 silly currentTree | `-- ms@2.1.2
+24 silly currentTree +-- statuses@1.5.0
+24 silly currentTree +-- string_decoder@1.1.1
+24 silly currentTree +-- string-width@1.0.2
+24 silly currentTree +-- strip-ansi@3.0.1
+24 silly currentTree +-- strip-json-comments@2.0.1
+24 silly currentTree +-- suncalc@1.8.0
+24 silly currentTree +-- tar-fs@2.1.1
+24 silly currentTree +-- tar-stream@2.2.0
+24 silly currentTree | `-- readable-stream@3.6.0
+24 silly currentTree +-- toidentifier@1.0.0
+24 silly currentTree +-- tunnel-agent@0.6.0
+24 silly currentTree +-- util-deprecate@1.0.2
+24 silly currentTree +-- vary@1.1.2
+24 silly currentTree +-- wide-align@1.1.5
+24 silly currentTree +-- wrappy@1.0.2
+24 silly currentTree +-- ws@8.2.3
+24 silly currentTree `-- yallist@4.0.0
+25 silly idealTree node-red-project@0.0.1
+25 silly idealTree +-- @industrialshields/rpiplc@1.0.1
+25 silly idealTree +-- @influxdata/influxdb-client@1.21.0
+25 silly idealTree +-- @serialport/binding-abstract@9.2.3
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- @serialport/binding-mock@9.2.4
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- @serialport/bindings@9.2.8
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- @serialport/parser-byte-length@9.2.4
+25 silly idealTree +-- @serialport/parser-cctalk@9.2.4
+25 silly idealTree +-- @serialport/parser-delimiter@9.2.4
+25 silly idealTree +-- @serialport/parser-inter-byte-timeout@9.2.4
+25 silly idealTree +-- @serialport/parser-readline@9.2.4
+25 silly idealTree +-- @serialport/parser-ready@9.2.4
+25 silly idealTree +-- @serialport/parser-regex@9.2.4
+25 silly idealTree +-- @serialport/stream@9.2.4
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- @types/component-emitter@1.2.11
+25 silly idealTree +-- @types/cookie@0.4.1
+25 silly idealTree +-- @types/cors@2.8.12
+25 silly idealTree +-- @types/node@16.11.13
+25 silly idealTree +-- accepts@1.3.7
+25 silly idealTree +-- ansi-regex@2.1.1
+25 silly idealTree +-- aproba@1.2.0
+25 silly idealTree +-- are-we-there-yet@1.1.7
+25 silly idealTree +-- base64-arraybuffer@1.0.1
+25 silly idealTree +-- base64-js@1.5.1
+25 silly idealTree +-- base64id@2.0.0
+25 silly idealTree +-- bindings@1.5.0
+25 silly idealTree +-- bl@4.1.0
+25 silly idealTree | `-- readable-stream@3.6.0
+25 silly idealTree +-- buffer@5.7.1
+25 silly idealTree +-- bytes@3.0.0
+25 silly idealTree +-- chownr@1.1.4
+25 silly idealTree +-- code-point-at@1.1.0
+25 silly idealTree +-- component-emitter@1.3.0
+25 silly idealTree +-- compressible@2.0.18
+25 silly idealTree +-- compression@1.7.4
+25 silly idealTree +-- console-control-strings@1.1.0
+25 silly idealTree +-- cookie@0.4.1
+25 silly idealTree +-- core-util-is@1.0.3
+25 silly idealTree +-- cors@2.8.5
+25 silly idealTree +-- debug@2.6.9
+25 silly idealTree +-- decompress-response@6.0.0
+25 silly idealTree +-- deep-extend@0.6.0
+25 silly idealTree +-- delegates@1.0.0
+25 silly idealTree +-- depd@1.1.2
+25 silly idealTree +-- destroy@1.0.4
+25 silly idealTree +-- detect-libc@1.0.3
+25 silly idealTree +-- ee-first@1.1.1
+25 silly idealTree +-- encodeurl@1.0.2
+25 silly idealTree +-- end-of-stream@1.4.4
+25 silly idealTree +-- engine.io-parser@5.0.2
+25 silly idealTree +-- engine.io@6.0.1
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- escape-html@1.0.3
+25 silly idealTree +-- etag@1.8.1
+25 silly idealTree +-- expand-template@2.0.3
+25 silly idealTree +-- file-uri-to-path@1.0.0
+25 silly idealTree +-- fresh@0.5.2
+25 silly idealTree +-- fs-constants@1.0.0
+25 silly idealTree +-- gauge@2.7.4
+25 silly idealTree +-- github-from-package@0.0.0
+25 silly idealTree +-- gridstack@0.6.4
+25 silly idealTree +-- has-unicode@2.0.1
+25 silly idealTree +-- http-errors@1.7.3
+25 silly idealTree +-- ieee754@1.2.1
+25 silly idealTree +-- influx@5.6.3
+25 silly idealTree +-- inherits@2.0.4
+25 silly idealTree +-- ini@1.3.8
+25 silly idealTree +-- is-fullwidth-code-point@1.0.0
+25 silly idealTree +-- isarray@1.0.0
+25 silly idealTree +-- jquery@3.6.0
+25 silly idealTree +-- lodash@4.17.21
+25 silly idealTree +-- lru-cache@6.0.0
+25 silly idealTree +-- mime-db@1.51.0
+25 silly idealTree +-- mime-types@2.1.34
+25 silly idealTree +-- mime@1.6.0
+25 silly idealTree +-- mimic-response@3.1.0
+25 silly idealTree +-- minimist@1.2.5
+25 silly idealTree +-- mkdirp-classic@0.5.3
+25 silly idealTree +-- ms@2.0.0
+25 silly idealTree +-- nan@2.15.0
+25 silly idealTree +-- napi-build-utils@1.0.2
+25 silly idealTree +-- negotiator@0.6.2
+25 silly idealTree +-- node-abi@3.5.0
+25 silly idealTree +-- node-red-contrib-bigtimer@2.7.6
+25 silly idealTree +-- node-red-contrib-counter@0.1.6
+25 silly idealTree +-- node-red-contrib-influxdb@0.6.1
+25 silly idealTree +-- node-red-contrib-rpiplc-node@1.0.6
+25 silly idealTree +-- node-red-dashboard@3.1.2
+25 silly idealTree +-- node-red-node-email@1.12.3
+25 silly idealTree | +-- base32.js@0.1.0
+25 silly idealTree | +-- core-util-is@1.0.2
+25 silly idealTree | +-- deepmerge@4.2.2
+25 silly idealTree | +-- dom-serializer@1.3.1
+25 silly idealTree | +-- domelementtype@2.2.0
+25 silly idealTree | +-- domhandler@4.1.0
+25 silly idealTree | +-- domutils@2.5.2
+25 silly idealTree | +-- encoding-japanese@1.0.30
+25 silly idealTree | +-- entities@2.2.0
+25 silly idealTree | +-- he@1.2.0
+25 silly idealTree | +-- html-to-text@7.0.0
+25 silly idealTree | +-- htmlparser2@6.1.0
+25 silly idealTree | +-- iconv-lite@0.6.2
+25 silly idealTree | +-- imap@0.8.19
+25 silly idealTree | +-- inherits@2.0.4
+25 silly idealTree | +-- ipv6-normalize@1.0.1
+25 silly idealTree | +-- isarray@0.0.1
+25 silly idealTree | +-- libbase64@1.2.1
+25 silly idealTree | +-- libmime@5.0.0
+25 silly idealTree | +-- libqp@1.1.0
+25 silly idealTree | +-- linkify-it@3.0.2
+25 silly idealTree | +-- mailparser@3.2.0
+25 silly idealTree | | `-- nodemailer@6.5.0
+25 silly idealTree | +-- mailsplit@5.0.1
+25 silly idealTree | +-- minimist@1.2.5
+25 silly idealTree | +-- nodemailer@6.6.3
+25 silly idealTree | +-- optimist@0.6.1
+25 silly idealTree | | `-- minimist@0.0.10
+25 silly idealTree | +-- poplib@0.1.7
+25 silly idealTree | +-- readable-stream@1.1.14
+25 silly idealTree | +-- safer-buffer@2.1.2
+25 silly idealTree | +-- semver@5.3.0
+25 silly idealTree | +-- smtp-server@3.9.0
+25 silly idealTree | | `-- nodemailer@6.6.1
+25 silly idealTree | +-- string_decoder@0.10.31
+25 silly idealTree | +-- tlds@1.219.0
+25 silly idealTree | +-- uc.micro@1.0.6
+25 silly idealTree | +-- utf7@1.0.2
+25 silly idealTree | `-- wordwrap@0.0.3
+25 silly idealTree +-- node-red-node-pi-gpio@2.0.1
+25 silly idealTree +-- node-red-node-random@0.4.0
+25 silly idealTree +-- node-red-node-serialport@0.15.0
+25 silly idealTree +-- node-red-node-smooth@0.1.2
+25 silly idealTree +-- npmlog@4.1.2
+25 silly idealTree +-- number-is-nan@1.0.1
+25 silly idealTree +-- object-assign@4.1.1
+25 silly idealTree +-- on-finished@2.3.0
+25 silly idealTree +-- on-headers@1.0.2
+25 silly idealTree +-- once@1.4.0
+25 silly idealTree +-- parseurl@1.3.3
+25 silly idealTree +-- prebuild-install@7.0.0
+25 silly idealTree +-- process-nextick-args@2.0.1
+25 silly idealTree +-- pump@3.0.0
+25 silly idealTree +-- range-parser@1.2.1
+25 silly idealTree +-- rc@1.2.8
+25 silly idealTree +-- readable-stream@2.3.7
+25 silly idealTree +-- safe-buffer@5.1.2
+25 silly idealTree +-- semver@7.3.5
+25 silly idealTree +-- send@0.17.1
+25 silly idealTree | `-- ms@2.1.1
+25 silly idealTree +-- serialport@9.2.8
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- serve-static@1.14.1
+25 silly idealTree +-- set-blocking@2.0.0
+25 silly idealTree +-- setprototypeof@1.1.1
+25 silly idealTree +-- signal-exit@3.0.6
+25 silly idealTree +-- simple-concat@1.0.1
+25 silly idealTree +-- simple-get@4.0.0
+25 silly idealTree +-- socket.io-adapter@2.3.3
+25 silly idealTree +-- socket.io-parser@4.0.4
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- socket.io@4.3.2
+25 silly idealTree | +-- debug@4.3.3
+25 silly idealTree | `-- ms@2.1.2
+25 silly idealTree +-- statuses@1.5.0
+25 silly idealTree +-- string_decoder@1.1.1
+25 silly idealTree +-- string-width@1.0.2
+25 silly idealTree +-- strip-ansi@3.0.1
+25 silly idealTree +-- strip-json-comments@2.0.1
+25 silly idealTree +-- suncalc@1.8.0
+25 silly idealTree +-- tar-fs@2.1.1
+25 silly idealTree +-- tar-stream@2.2.0
+25 silly idealTree | `-- readable-stream@3.6.0
+25 silly idealTree +-- toidentifier@1.0.0
+25 silly idealTree +-- tunnel-agent@0.6.0
+25 silly idealTree +-- util-deprecate@1.0.2
+25 silly idealTree +-- vary@1.1.2
+25 silly idealTree +-- wide-align@1.1.5
+25 silly idealTree +-- wrappy@1.0.2
+25 silly idealTree +-- ws@8.2.3
+25 silly idealTree `-- yallist@4.0.0
+26 silly install generateActionsToTake
+27 silly diff-trees filtering actions: includeDev false includeProd true includeOpt true
+28 timing stage:generateActionsToTake Completed in 73ms
+29 silly diffTrees action count 2
+30 silly diffTrees add @industrialshields/rpiplc@1.0.1
+31 silly diffTrees add node-red-contrib-rpiplc-node@1.0.6
+32 silly decomposeActions action count 16
+33 silly decomposeActions fetch @industrialshields/rpiplc@1.0.1
+34 silly decomposeActions extract @industrialshields/rpiplc@1.0.1
+35 silly decomposeActions preinstall @industrialshields/rpiplc@1.0.1
+36 silly decomposeActions build @industrialshields/rpiplc@1.0.1
+37 silly decomposeActions install @industrialshields/rpiplc@1.0.1
+38 silly decomposeActions postinstall @industrialshields/rpiplc@1.0.1
+39 silly decomposeActions finalize @industrialshields/rpiplc@1.0.1
+40 silly decomposeActions refresh-package-json @industrialshields/rpiplc@1.0.1
+41 silly decomposeActions fetch node-red-contrib-rpiplc-node@1.0.6
+42 silly decomposeActions extract node-red-contrib-rpiplc-node@1.0.6
+43 silly decomposeActions preinstall node-red-contrib-rpiplc-node@1.0.6
+44 silly decomposeActions build node-red-contrib-rpiplc-node@1.0.6
+45 silly decomposeActions install node-red-contrib-rpiplc-node@1.0.6
+46 silly decomposeActions postinstall node-red-contrib-rpiplc-node@1.0.6
+47 silly decomposeActions finalize node-red-contrib-rpiplc-node@1.0.6
+48 silly decomposeActions refresh-package-json node-red-contrib-rpiplc-node@1.0.6
+49 silly install executeActions
+50 silly doSerial global-install 16
+51 verbose correctMkdir /data/.npm/_locks correctMkdir not in flight; initializing
+52 verbose lock using /data/.npm/_locks/staging-accc372ed0ccb0d8.lock for /data/node_modules/.staging
+53 silly doParallel extract 2
+54 silly extract @industrialshields/rpiplc@1.0.1
+55 silly extract node-red-contrib-rpiplc-node@1.0.6
+56 silly tarball trying node-red-contrib-rpiplc-node@1.0.6 by hash: sha512-zFFqP0VNZEoOg9IKgUFfC8sDauf7coFclj6qtJIHY6WvogM2Q6LiWjVLuQr2EuARoxFXsuYyf56+tYGInNrSbw==
+57 silly tarball trying @industrialshields/rpiplc@^1.0.1 by hash: sha512-SkTbbSFULd9jOC8Lt5SDG+CG+zqkZfz3BmEj2AiYD0Ve+Wmivwz7OJmPeVgFiMerX+RFkQL/kTKcT6VgBOvDOg==
+58 silly extract node-red-contrib-rpiplc-node@1.0.6 extracted to /data/node_modules/.staging/node-red-contrib-rpiplc-node-c7a26a56 (109ms)
+59 silly extract @industrialshields/rpiplc@^1.0.1 extracted to /data/node_modules/.staging/@industrialshields/rpiplc-274b3738 (118ms)
+60 timing action:extract Completed in 124ms
+61 silly doReverseSerial unbuild 16
+62 silly doSerial remove 16
+63 silly doSerial move 16
+64 silly doSerial finalize 16
+65 silly finalize /data/node_modules/@industrialshields/rpiplc
+66 silly finalize /data/node_modules/node-red-contrib-rpiplc-node
+67 timing action:finalize Completed in 14ms
+68 silly doParallel refresh-package-json 2
+69 silly refresh-package-json /data/node_modules/@industrialshields/rpiplc
+70 silly refresh-package-json /data/node_modules/node-red-contrib-rpiplc-node
+71 timing action:refresh-package-json Completed in 32ms
+72 silly doParallel preinstall 2
+73 silly preinstall @industrialshields/rpiplc@1.0.1
+74 info lifecycle @industrialshields/rpiplc@1.0.1~preinstall: @industrialshields/rpiplc@1.0.1
+75 silly preinstall node-red-contrib-rpiplc-node@1.0.6
+76 info lifecycle node-red-contrib-rpiplc-node@1.0.6~preinstall: node-red-contrib-rpiplc-node@1.0.6
+77 timing action:preinstall Completed in 4ms
+78 silly doSerial build 16
+79 silly build @industrialshields/rpiplc@1.0.1
+80 info linkStuff @industrialshields/rpiplc@1.0.1
+81 silly linkStuff @industrialshields/rpiplc@1.0.1 has /data/node_modules as its parent node_modules
+82 silly build node-red-contrib-rpiplc-node@1.0.6
+83 info linkStuff node-red-contrib-rpiplc-node@1.0.6
+84 silly linkStuff node-red-contrib-rpiplc-node@1.0.6 has /data/node_modules as its parent node_modules
+85 timing action:build Completed in 3ms
+86 silly doSerial global-link 16
+87 silly doParallel update-linked 0
+88 silly doSerial install 16
+89 silly install @industrialshields/rpiplc@1.0.1
+90 info lifecycle @industrialshields/rpiplc@1.0.1~install: @industrialshields/rpiplc@1.0.1
+91 verbose lifecycle @industrialshields/rpiplc@1.0.1~install: unsafe-perm in lifecycle true
+92 verbose lifecycle @industrialshields/rpiplc@1.0.1~install: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/data/node_modules/@industrialshields/rpiplc/node_modules/.bin:/data/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/usr/src/node-red/node_modules/.bin:/usr/src/node-red/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+93 verbose lifecycle @industrialshields/rpiplc@1.0.1~install: CWD: /data/node_modules/@industrialshields/rpiplc
+94 silly lifecycle @industrialshields/rpiplc@1.0.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+95 silly lifecycle @industrialshields/rpiplc@1.0.1~install: Returned: code: 1  signal: null
+96 info lifecycle @industrialshields/rpiplc@1.0.1~install: Failed to exec install script
+97 timing action:install Completed in 2052ms
+98 verbose unlock done using /data/.npm/_locks/staging-accc372ed0ccb0d8.lock for /data/node_modules/.staging
+99 timing stage:rollbackFailedOptional Completed in 45ms
+100 timing stage:runTopLevelLifecycles Completed in 14017ms
+101 silly saveTree node-red-project@0.0.1
+101 silly saveTree +-- node-red-contrib-bigtimer@2.7.6
+101 silly saveTree | `-- suncalc@1.8.0
+101 silly saveTree +-- node-red-contrib-counter@0.1.6
+101 silly saveTree +-- node-red-contrib-influxdb@0.6.1
+101 silly saveTree | +-- @influxdata/influxdb-client@1.21.0
+101 silly saveTree | +-- influx@5.6.3
+101 silly saveTree | `-- lodash@4.17.21
+101 silly saveTree +-- node-red-contrib-rpiplc-node@1.0.6
+101 silly saveTree | `-- @industrialshields/rpiplc@1.0.1
+101 silly saveTree |   `-- bindings@1.5.0
+101 silly saveTree |     `-- file-uri-to-path@1.0.0
+101 silly saveTree +-- node-red-dashboard@3.1.2
+101 silly saveTree | +-- compression@1.7.4
+101 silly saveTree | | +-- accepts@1.3.7
+101 silly saveTree | | | +-- mime-types@2.1.34
+101 silly saveTree | | | | `-- mime-db@1.51.0
+101 silly saveTree | | | `-- negotiator@0.6.2
+101 silly saveTree | | +-- bytes@3.0.0
+101 silly saveTree | | +-- compressible@2.0.18
+101 silly saveTree | | +-- debug@2.6.9
+101 silly saveTree | | | `-- ms@2.0.0
+101 silly saveTree | | +-- on-headers@1.0.2
+101 silly saveTree | | +-- safe-buffer@5.1.2
+101 silly saveTree | | `-- vary@1.1.2
+101 silly saveTree | +-- gridstack@0.6.4
+101 silly saveTree | | `-- jquery@3.6.0
+101 silly saveTree | +-- serve-static@1.14.1
+101 silly saveTree | | +-- encodeurl@1.0.2
+101 silly saveTree | | +-- escape-html@1.0.3
+101 silly saveTree | | +-- parseurl@1.3.3
+101 silly saveTree | | `-- send@0.17.1
+101 silly saveTree | |   +-- depd@1.1.2
+101 silly saveTree | |   +-- destroy@1.0.4
+101 silly saveTree | |   +-- etag@1.8.1
+101 silly saveTree | |   +-- fresh@0.5.2
+101 silly saveTree | |   +-- http-errors@1.7.3
+101 silly saveTree | |   | +-- inherits@2.0.4
+101 silly saveTree | |   | +-- setprototypeof@1.1.1
+101 silly saveTree | |   | +-- statuses@1.5.0
+101 silly saveTree | |   | `-- toidentifier@1.0.0
+101 silly saveTree | |   +-- mime@1.6.0
+101 silly saveTree | |   +-- ms@2.1.1
+101 silly saveTree | |   +-- on-finished@2.3.0
+101 silly saveTree | |   | `-- ee-first@1.1.1
+101 silly saveTree | |   +-- range-parser@1.2.1
+101 silly saveTree | |   `-- statuses@1.5.0
+101 silly saveTree | `-- socket.io@4.3.2
+101 silly saveTree |   +-- base64id@2.0.0
+101 silly saveTree |   +-- debug@4.3.3
+101 silly saveTree |   | `-- ms@2.1.2
+101 silly saveTree |   +-- engine.io@6.0.1
+101 silly saveTree |   | +-- @types/cookie@0.4.1
+101 silly saveTree |   | +-- @types/cors@2.8.12
+101 silly saveTree |   | +-- @types/node@16.11.13
+101 silly saveTree |   | +-- cookie@0.4.1
+101 silly saveTree |   | +-- cors@2.8.5
+101 silly saveTree |   | | `-- object-assign@4.1.1
+101 silly saveTree |   | +-- debug@4.3.3
+101 silly saveTree |   | | `-- ms@2.1.2
+101 silly saveTree |   | +-- engine.io-parser@5.0.2
+101 silly saveTree |   | | `-- base64-arraybuffer@1.0.1
+101 silly saveTree |   | `-- ws@8.2.3
+101 silly saveTree |   +-- socket.io-adapter@2.3.3
+101 silly saveTree |   `-- socket.io-parser@4.0.4
+101 silly saveTree |     +-- @types/component-emitter@1.2.11
+101 silly saveTree |     +-- component-emitter@1.3.0
+101 silly saveTree |     `-- debug@4.3.3
+101 silly saveTree |       `-- ms@2.1.2
+101 silly saveTree +-- node-red-node-email@1.12.3
+101 silly saveTree | +-- imap@0.8.19
+101 silly saveTree | | +-- readable-stream@1.1.14
+101 silly saveTree | | | +-- core-util-is@1.0.2
+101 silly saveTree | | | +-- inherits@2.0.4
+101 silly saveTree | | | +-- isarray@0.0.1
+101 silly saveTree | | | `-- string_decoder@0.10.31
+101 silly saveTree | | `-- utf7@1.0.2
+101 silly saveTree | |   `-- semver@5.3.0
+101 silly saveTree | +-- mailparser@3.2.0
+101 silly saveTree | | +-- encoding-japanese@1.0.30
+101 silly saveTree | | +-- he@1.2.0
+101 silly saveTree | | +-- html-to-text@7.0.0
+101 silly saveTree | | | +-- deepmerge@4.2.2
+101 silly saveTree | | | +-- htmlparser2@6.1.0
+101 silly saveTree | | | | +-- domelementtype@2.2.0
+101 silly saveTree | | | | +-- domhandler@4.1.0
+101 silly saveTree | | | | +-- domutils@2.5.2
+101 silly saveTree | | | | | `-- dom-serializer@1.3.1
+101 silly saveTree | | | | |   `-- entities@2.2.0
+101 silly saveTree | | | | `-- entities@2.2.0
+101 silly saveTree | | | `-- minimist@1.2.5
+101 silly saveTree | | +-- iconv-lite@0.6.2
+101 silly saveTree | | | `-- safer-buffer@2.1.2
+101 silly saveTree | | +-- libmime@5.0.0
+101 silly saveTree | | | +-- libbase64@1.2.1
+101 silly saveTree | | | `-- libqp@1.1.0
+101 silly saveTree | | +-- linkify-it@3.0.2
+101 silly saveTree | | | `-- uc.micro@1.0.6
+101 silly saveTree | | +-- mailsplit@5.0.1
+101 silly saveTree | | +-- nodemailer@6.5.0
+101 silly saveTree | | `-- tlds@1.219.0
+101 silly saveTree | +-- nodemailer@6.6.3
+101 silly saveTree | +-- poplib@0.1.7
+101 silly saveTree | | `-- optimist@0.6.1
+101 silly saveTree | |   +-- minimist@0.0.10
+101 silly saveTree | |   `-- wordwrap@0.0.3
+101 silly saveTree | `-- smtp-server@3.9.0
+101 silly saveTree |   +-- base32.js@0.1.0
+101 silly saveTree |   +-- ipv6-normalize@1.0.1
+101 silly saveTree |   `-- nodemailer@6.6.1
+101 silly saveTree +-- node-red-node-pi-gpio@2.0.1
+101 silly saveTree +-- node-red-node-random@0.4.0
+101 silly saveTree +-- node-red-node-serialport@0.15.0
+101 silly saveTree | `-- serialport@9.2.8
+101 silly saveTree |   +-- @serialport/binding-mock@9.2.4
+101 silly saveTree |   | +-- @serialport/binding-abstract@9.2.3
+101 silly saveTree |   | | `-- debug@4.3.3
+101 silly saveTree |   | |   `-- ms@2.1.2
+101 silly saveTree |   | `-- debug@4.3.3
+101 silly saveTree |   |   `-- ms@2.1.2
+101 silly saveTree |   +-- @serialport/bindings@9.2.8
+101 silly saveTree |   | +-- @serialport/parser-readline@9.2.4
+101 silly saveTree |   | | `-- @serialport/parser-delimiter@9.2.4
+101 silly saveTree |   | +-- debug@4.3.3
+101 silly saveTree |   | | `-- ms@2.1.2
+101 silly saveTree |   | +-- nan@2.15.0
+101 silly saveTree |   | `-- prebuild-install@7.0.0
+101 silly saveTree |   |   +-- detect-libc@1.0.3
+101 silly saveTree |   |   +-- expand-template@2.0.3
+101 silly saveTree |   |   +-- github-from-package@0.0.0
+101 silly saveTree |   |   +-- minimist@1.2.5
+101 silly saveTree |   |   +-- mkdirp-classic@0.5.3
+101 silly saveTree |   |   +-- napi-build-utils@1.0.2
+101 silly saveTree |   |   +-- node-abi@3.5.0
+101 silly saveTree |   |   | `-- semver@7.3.5
+101 silly saveTree |   |   |   `-- lru-cache@6.0.0
+101 silly saveTree |   |   |     `-- yallist@4.0.0
+101 silly saveTree |   |   +-- npmlog@4.1.2
+101 silly saveTree |   |   | +-- are-we-there-yet@1.1.7
+101 silly saveTree |   |   | | +-- delegates@1.0.0
+101 silly saveTree |   |   | | `-- readable-stream@2.3.7
+101 silly saveTree |   |   | |   +-- core-util-is@1.0.3
+101 silly saveTree |   |   | |   +-- isarray@1.0.0
+101 silly saveTree |   |   | |   +-- process-nextick-args@2.0.1
+101 silly saveTree |   |   | |   +-- string_decoder@1.1.1
+101 silly saveTree |   |   | |   `-- util-deprecate@1.0.2
+101 silly saveTree |   |   | +-- console-control-strings@1.1.0
+101 silly saveTree |   |   | +-- gauge@2.7.4
+101 silly saveTree |   |   | | +-- aproba@1.2.0
+101 silly saveTree |   |   | | +-- has-unicode@2.0.1
+101 silly saveTree |   |   | | +-- signal-exit@3.0.6
+101 silly saveTree |   |   | | +-- string-width@1.0.2
+101 silly saveTree |   |   | | | +-- code-point-at@1.1.0
+101 silly saveTree |   |   | | | +-- is-fullwidth-code-point@1.0.0
+101 silly saveTree |   |   | | | | `-- number-is-nan@1.0.1
+101 silly saveTree |   |   | | | `-- strip-ansi@3.0.1
+101 silly saveTree |   |   | | |   `-- ansi-regex@2.1.1
+101 silly saveTree |   |   | | +-- strip-ansi@3.0.1
+101 silly saveTree |   |   | | `-- wide-align@1.1.5
+101 silly saveTree |   |   | `-- set-blocking@2.0.0
+101 silly saveTree |   |   +-- pump@3.0.0
+101 silly saveTree |   |   | +-- end-of-stream@1.4.4
+101 silly saveTree |   |   | | `-- once@1.4.0
+101 silly saveTree |   |   | |   `-- wrappy@1.0.2
+101 silly saveTree |   |   | `-- once@1.4.0
+101 silly saveTree |   |   +-- rc@1.2.8
+101 silly saveTree |   |   | +-- deep-extend@0.6.0
+101 silly saveTree |   |   | +-- ini@1.3.8
+101 silly saveTree |   |   | `-- strip-json-comments@2.0.1
+101 silly saveTree |   |   +-- simple-get@4.0.0
+101 silly saveTree |   |   | +-- decompress-response@6.0.0
+101 silly saveTree |   |   | | `-- mimic-response@3.1.0
+101 silly saveTree |   |   | `-- simple-concat@1.0.1
+101 silly saveTree |   |   +-- tar-fs@2.1.1
+101 silly saveTree |   |   | +-- chownr@1.1.4
+101 silly saveTree |   |   | `-- tar-stream@2.2.0
+101 silly saveTree |   |   |   +-- bl@4.1.0
+101 silly saveTree |   |   |   | +-- buffer@5.7.1
+101 silly saveTree |   |   |   | | +-- base64-js@1.5.1
+101 silly saveTree |   |   |   | | `-- ieee754@1.2.1
+101 silly saveTree |   |   |   | `-- readable-stream@3.6.0
+101 silly saveTree |   |   |   +-- fs-constants@1.0.0
+101 silly saveTree |   |   |   `-- readable-stream@3.6.0
+101 silly saveTree |   |   `-- tunnel-agent@0.6.0
+101 silly saveTree |   +-- @serialport/parser-byte-length@9.2.4
+101 silly saveTree |   +-- @serialport/parser-cctalk@9.2.4
+101 silly saveTree |   +-- @serialport/parser-delimiter@9.2.4
+101 silly saveTree |   +-- @serialport/parser-inter-byte-timeout@9.2.4
+101 silly saveTree |   +-- @serialport/parser-readline@9.2.4
+101 silly saveTree |   +-- @serialport/parser-ready@9.2.4
+101 silly saveTree |   +-- @serialport/parser-regex@9.2.4
+101 silly saveTree |   +-- @serialport/stream@9.2.4
+101 silly saveTree |   | `-- debug@4.3.3
+101 silly saveTree |   |   `-- ms@2.1.2
+101 silly saveTree |   `-- debug@4.3.3
+101 silly saveTree |     `-- ms@2.1.2
+101 silly saveTree `-- node-red-node-smooth@0.1.2
+102 verbose stack Error: @industrialshields/rpiplc@1.0.1 install: `node-gyp rebuild`
+102 verbose stack Exit status 1
+102 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+102 verbose stack     at EventEmitter.emit (events.js:400:28)
+102 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+102 verbose stack     at ChildProcess.emit (events.js:400:28)
+102 verbose stack     at maybeClose (internal/child_process.js:1058:16)
+102 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:293:5)
+103 verbose pkgid @industrialshields/rpiplc@1.0.1
+104 verbose cwd /data
+105 verbose Linux 5.10.43v64
+106 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix=~" "--production" "--engine-strict" "node-red-contrib-rpiplc-node@1.0.6"
+107 verbose node v14.18.2
+108 verbose npm  v6.14.15
+109 error code ELIFECYCLE
+110 error errno 1
+111 error @industrialshields/rpiplc@1.0.1 install: `node-gyp rebuild`
+111 error Exit status 1
+112 error Failed at the @industrialshields/rpiplc@1.0.1 install script.
+112 error This is probably not a problem with npm. There is likely additional logging output above.
+113 verbose exit [ 1, true ]

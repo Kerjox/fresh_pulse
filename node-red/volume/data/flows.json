@@ -1,0 +1,1087 @@
+[
+    {
+        "id": "85dd890890d94b62",
+        "type": "tab",
+        "label": "Input data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2c7795a896a7649f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "25e419ecd19e52d5",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bd1a23b085765c57",
+        "type": "subflow",
+        "name": "Parse Serial",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 260,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "330f069df5a61d50"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 740,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "330f069df5a61d50",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 740,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "330f069df5a61d50",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "cefd2ceda9aa8781",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "a8d63e50925c9ce0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#3d8fc2",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#3d8fc2",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#3d8fc2",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#77b1d4",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#3d8fc2",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3b7aa0adfbc35b13",
+        "type": "ui_tab",
+        "name": "Fresh & Pure",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "969dc95e5d21fd54",
+        "type": "ui_group",
+        "name": "Sonda Conductividad",
+        "tab": "3b7aa0adfbc35b13",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "332bd2df51bb277d",
+        "type": "ui_group",
+        "name": "Sonda Temp 1",
+        "tab": "3b7aa0adfbc35b13",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "11d765283fc707d8",
+        "type": "ui_tab",
+        "name": "Control",
+        "icon": "settings",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "37516f36a0701942",
+        "type": "ui_group",
+        "name": "Bomba",
+        "tab": "11d765283fc707d8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cfa4d048dd60155b",
+        "type": "ui_tab",
+        "name": "Graphs",
+        "icon": "fa-area-chart",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c6c8c930943c6f9d",
+        "type": "ui_group",
+        "name": "Sonda Temp 1",
+        "tab": "cfa4d048dd60155b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62b92676bd765505",
+        "type": "influxdb",
+        "hostname": "influxdb",
+        "port": "8086",
+        "protocol": "http",
+        "database": "fresh_pulse_db",
+        "name": "Fresh_Pulse_db",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "af479a17.b8d368",
+        "type": "ncd-comm",
+        "name": "",
+        "bus": "i2c-1",
+        "commType": "standard",
+        "addr": "0",
+        "useMux": false,
+        "muxAddr": "112",
+        "muxPort": "0"
+    },
+    {
+        "id": "330f069df5a61d50",
+        "type": "function",
+        "z": "bd1a23b085765c57",
+        "name": "Parse data",
+        "func": "let input = msg.payload.substring(1).split(';');\n\nlet sondaConductiva = {\n    temp: parseFloatString(input[2]),\n    conductividad: parseFloatString(input[12])\n}\n\nlet sensorTemp1 = {\n    temp: parseFloatString(input[3])\n}\n\n\nfunction parseFloatString(number) {\n    \n    return parseFloat(number.replace(',', '.'))\n}\nreturn [sondaConductiva, sensorTemp1];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "15bc4788a2425ae2",
+        "type": "serial in",
+        "z": "85dd890890d94b62",
+        "name": "Input Sondas",
+        "serial": "cefd2ceda9aa8781",
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [
+                "52515e85d415f1af",
+                "12ddb5c45bbf2e38"
+            ]
+        ]
+    },
+    {
+        "id": "0213ad0bac14cfe4",
+        "type": "debug",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "52515e85d415f1af",
+        "type": "function",
+        "z": "85dd890890d94b62",
+        "name": "RAW Data",
+        "func": "let input = {\n    payload: msg.payload.substring(1).split(';')\n}\n\nreturn input;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "c16a4b662f9de294"
+            ]
+        ]
+    },
+    {
+        "id": "c16a4b662f9de294",
+        "type": "debug",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8be5fd02e5700bc2",
+        "type": "ui_gauge",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "group": "969dc95e5d21fd54",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Cº",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1370,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4d7e31eb345b3b8b",
+        "type": "change",
+        "z": "85dd890890d94b62",
+        "name": "Get temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 100,
+        "wires": [
+            [
+                "2b2edd33bf6d3d58",
+                "8be5fd02e5700bc2"
+            ]
+        ]
+    },
+    {
+        "id": "2b2edd33bf6d3d58",
+        "type": "debug",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "2440b26fe985900e",
+        "type": "change",
+        "z": "85dd890890d94b62",
+        "name": "Get conductividad",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "conductividad",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 160,
+        "wires": [
+            [
+                "3bcfec934be04353"
+            ]
+        ]
+    },
+    {
+        "id": "3bcfec934be04353",
+        "type": "ui_gauge",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "group": "969dc95e5d21fd54",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Conductividad",
+        "label": "mS/cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1400,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "185f36ab47351754",
+        "type": "change",
+        "z": "85dd890890d94b62",
+        "name": "Get temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 260,
+        "wires": [
+            [
+                "7f23ab55e820bfea",
+                "ea2311efe78489eb",
+                "dd0e918a50c0583a"
+            ]
+        ]
+    },
+    {
+        "id": "ea2311efe78489eb",
+        "type": "ui_gauge",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "group": "332bd2df51bb277d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Cº",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1370,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "21d6b7d5db7f6014",
+        "type": "inject",
+        "z": "85dd890890d94b62",
+        "name": "TestData",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"00:00:00\";\"00:00:00\";17,23;25,12;;;;;;;;;1,25",
+        "payloadType": "str",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "52515e85d415f1af"
+            ]
+        ]
+    },
+    {
+        "id": "44c45ae6197cbca3",
+        "type": "function",
+        "z": "85dd890890d94b62",
+        "name": "Random Data",
+        "func": "\nlet data ='\"00:00:00\";\"00:00:00\";'\ndata += (Math.random() * 100).toFixed(2) + ';';\ndata += (Math.random() * 100).toFixed(2) + ';';\ndata += ';;;;;;;;'\ndata += (Math.random() * 5).toFixed(2);\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 40,
+        "wires": [
+            [
+                "32eb67f67225b04a",
+                "12ddb5c45bbf2e38"
+            ]
+        ]
+    },
+    {
+        "id": "c1322285fb284d75",
+        "type": "inject",
+        "z": "85dd890890d94b62",
+        "name": "Insert",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "44c45ae6197cbca3"
+            ]
+        ]
+    },
+    {
+        "id": "32eb67f67225b04a",
+        "type": "debug",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "59e76f4cfba34811",
+        "type": "ui_button",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "group": "37516f36a0701942",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1130,
+        "y": 600,
+        "wires": [
+            [
+                "06bfbed7d8446ef9"
+            ]
+        ]
+    },
+    {
+        "id": "7f23ab55e820bfea",
+        "type": "ui_chart",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "group": "c6c8c930943c6f9d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1370,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67c1f8ed1ef45c79",
+        "type": "ui_switch",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "label": "Bomba Peristaltica",
+        "tooltip": "",
+        "group": "37516f36a0701942",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 1540,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7af1719570dfc0f",
+        "type": "influxdb out",
+        "z": "85dd890890d94b62",
+        "influxdb": "62b92676bd765505",
+        "name": "InfluxDB",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1560,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "dd0e918a50c0583a",
+        "type": "change",
+        "z": "85dd890890d94b62",
+        "name": "Set Measurement",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "sensor.temp.1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1330,
+        "y": 360,
+        "wires": [
+            [
+                "c7af1719570dfc0f"
+            ]
+        ]
+    },
+    {
+        "id": "824b52dae3ab6735",
+        "type": "catch",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "scope": [
+            "260697fcd86ce3e8"
+        ],
+        "uncaught": false,
+        "x": 250,
+        "y": 900,
+        "wires": [
+            [
+                "ac7c1e818ac0d9f7"
+            ]
+        ]
+    },
+    {
+        "id": "ac7c1e818ac0d9f7",
+        "type": "debug",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "758fc07ba1cce6af",
+        "type": "status",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "scope": [
+            "260697fcd86ce3e8"
+        ],
+        "x": 250,
+        "y": 840,
+        "wires": [
+            [
+                "ac7c1e818ac0d9f7"
+            ]
+        ]
+    },
+    {
+        "id": "cb677e95263f60a6",
+        "type": "complete",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "scope": [
+            "260697fcd86ce3e8"
+        ],
+        "uncaught": false,
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "ac7c1e818ac0d9f7"
+            ]
+        ]
+    },
+    {
+        "id": "06bfbed7d8446ef9",
+        "type": "change",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "label",
+                "pt": "msg",
+                "to": "AAAA",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 500,
+        "wires": [
+            [
+                "59e76f4cfba34811"
+            ]
+        ]
+    },
+    {
+        "id": "12ddb5c45bbf2e38",
+        "type": "subflow:bd1a23b085765c57",
+        "z": "85dd890890d94b62",
+        "name": "",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "0213ad0bac14cfe4",
+                "4d7e31eb345b3b8b",
+                "2440b26fe985900e"
+            ],
+            [
+                "185f36ab47351754"
+            ]
+        ]
+    },
+    {
+        "id": "fde7314.d38d4d",
+        "type": "rpi-gpio out",
+        "z": "2c7795a896a7649f",
+        "name": "LED 2 on BCM7",
+        "pin": "7",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "pwm",
+        "bcm": true,
+        "x": 720,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "216a7c2c.b2864c",
+        "type": "inject",
+        "z": "2c7795a896a7649f",
+        "name": "Off",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 276,
+        "y": 238,
+        "wires": [
+            [
+                "fde7314.d38d4d"
+            ]
+        ]
+    },
+    {
+        "id": "85150548.334f38",
+        "type": "inject",
+        "z": "2c7795a896a7649f",
+        "name": "5%",
+        "props": [
+            {
+                "p": "payload",
+                "v": "5",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 289,
+        "y": 294,
+        "wires": [
+            [
+                "fde7314.d38d4d"
+            ]
+        ]
+    },
+    {
+        "id": "db754534.4d67e",
+        "type": "inject",
+        "z": "2c7795a896a7649f",
+        "name": "30%",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 292,
+        "y": 355,
+        "wires": [
+            [
+                "fde7314.d38d4d"
+            ]
+        ]
+    },
+    {
+        "id": "7fc774f5.49ca3c",
+        "type": "inject",
+        "z": "2c7795a896a7649f",
+        "name": "50%",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "num",
+        "x": 294,
+        "y": 411,
+        "wires": [
+            [
+                "fde7314.d38d4d"
+            ]
+        ]
+    },
+    {
+        "id": "c58e66c.40af618",
+        "type": "inject",
+        "z": "2c7795a896a7649f",
+        "name": "100%",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 292,
+        "y": 469,
+        "wires": [
+            [
+                "fde7314.d38d4d"
+            ]
+        ]
+    },
+    {
+        "id": "f3b7be45.4ccfd8",
+        "type": "comment",
+        "z": "2c7795a896a7649f",
+        "name": "Pins",
+        "info": "** Notes: **\nYou can't have a pin in 2 flows\nIf you add a pin into a second flow with a different type then you'll need to restart node-red",
+        "x": 691,
+        "y": 328.5,
+        "wires": []
+    },
+    {
+        "id": "445c94b2.66ff2c",
+        "type": "ncd-mcp4725",
+        "z": "25e419ecd19e52d5",
+        "name": "",
+        "connection": "af479a17.b8d368",
+        "addr": "96",
+        "persist": "",
+        "startup": false,
+        "eeprom_pd": 0,
+        "eeprom_dac": 0,
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [
+                "874d4949.55c918"
+            ]
+        ]
+    },
+    {
+        "id": "874d4949.55c918",
+        "type": "debug",
+        "z": "25e419ecd19e52d5",
+        "name": "transmitter",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 900,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "aaf7fa44.c8e388",
+        "type": "comment",
+        "z": "25e419ecd19e52d5",
+        "name": "4-20mA transmitter",
+        "info": "",
+        "x": 540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "175ad7a3.2b77c8",
+        "type": "inject",
+        "z": "25e419ecd19e52d5",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "445c94b2.66ff2c"
+            ]
+        ]
+    }
+]
